@@ -65,6 +65,16 @@ angular.module('app.routes', [])
     }
   })
 
+  .state('menu.scenicWallpapers', {
+    url: '/SW',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/scenicWallpapers.html',
+        controller: 'scenicWallpapersCtrl'
+      }
+    }
+  })
+
 $urlRouterProvider.otherwise('/side-menu21/page1')
 
 
